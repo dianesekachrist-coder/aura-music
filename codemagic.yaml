@@ -1,14 +1,19 @@
 workflows:
-  resibook-proprietaire-android:
-    name: RésiBook Propriétaire — Android APK
+  aura-music-android:
+    name: Aura Music - Android APK
     max_build_duration: 60
     environment:
       flutter: stable
       java: 17
       vars:
-        PACKAGE_NAME: "com.resibook.proprietaire"
+        PACKAGE_NAME: "com.aura.music_player"
 
     scripts:
+      - name: Créer les dossiers assets
+        script: |
+          mkdir -p assets/images
+          mkdir -p assets/animations
+
       - name: Récupérer les dépendances
         script: flutter pub get
 
