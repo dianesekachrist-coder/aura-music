@@ -1,0 +1,44 @@
+name: music_player
+description: A modern music player app with animations.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Audio playback
+  just_audio: ^0.9.36
+  audio_session: ^0.1.18
+  
+  # File & permissions
+  permission_handler: ^11.3.0
+  on_audio_query: ^2.9.0
+  
+  # UI & animations
+  animations: ^2.0.11
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.0
+  
+  # State management
+  provider: ^6.1.2
+  
+  # Utils
+  palette_generator: ^0.3.3+3
+  cached_network_image: ^3.3.1
+  
+  cupertino_icons: ^1.0.6
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
